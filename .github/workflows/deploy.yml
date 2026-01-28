@@ -5,6 +5,9 @@ on:
     branches: ['main']
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -30,10 +33,9 @@ jobs:
       - name: Create .nojekyll file
         run: touch dist/.nojekyll
 
-      - name: Deploy to gh-pages
-        run: |
-          git config --local user.email "github-actions@github.com"
-          git config --local user.name "GitHub Actions"
-          git add -f dist/
-          git commit -m "Deploy to gh-pages"
-          git push origin $(git subtree split --prefix dist main):gh-pages --force
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: dist
+          branch: gh-pages
+          clean: true
