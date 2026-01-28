@@ -196,23 +196,6 @@ export class AppHeader extends LitElement {
     }
   `;
 
-      nav a {
-        padding: 0.5rem 0.75rem;
-        font-size: 0.85rem;
-      }
-
-      .logo {
-        font-size: 1rem;
-      }
-
-      .logo-icon {
-        width: 28px;
-        height: 28px;
-        font-size: 1rem;
-      }
-    }
-  `;
-
   render() {
     return html`
       <header>
