@@ -1,9 +1,9 @@
 {
-  "id": "/",
-  "scope": "/",
+  "id": "/pwawestcoastmotorcycles/",
+  "scope": "/pwawestcoastmotorcycles/",
   "name": "West Coast Motorcycles",
   "display": "standalone",
-  "start_url": "/",
+  "start_url": "/pwawestcoastmotorcycles/",
   "short_name": "WCM",
   "theme_color": "#E1477E",
   "description": "Premium Harley-Davidson motorcycle rentals in Cape Town, South Africa",
