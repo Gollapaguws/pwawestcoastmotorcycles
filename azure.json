@@ -1,0 +1,12 @@
+{
+  "version": "1.0",
+  "artifactDir": "dist",
+  "apiLanguage": "node",
+  "appBuildCommand": "npm run build",
+  "routes": [
+    {
+      "route": "/*",
+      "rewrite": "index.html"
+    }
+  ]
+}
